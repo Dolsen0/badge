@@ -2,17 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-end-rgb: 100, 0, 0;
   }
 }
 
@@ -24,4 +19,31 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.badge{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  justify-items: center;
+  height: 100%;
+  width: 100%;  
+  background-color: gainsboro;
+  border : 1px solid gray;
+  color: grey
+}
+
+.userName{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  padding: 10px;
+  margin: 10px;
 }
